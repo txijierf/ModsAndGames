@@ -9,6 +9,7 @@
 	<script src="js/angular.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script>
 	$(document).ready(function total() {
 		var numitems1 =  $("#modlist_grid_1 li").length;
@@ -33,49 +34,51 @@
 	<div class="row">
 		<div class="col-md-4">
 			<h3>Fallout 3: Game of the Year Edition</h3>
-			<ul id="modlist_grid_1">
-				<li><a href="http://fose.silverlock.org/">Fallout 3 Script Extender</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/19122/?">Updated Unofficial Fallout 3 Patch</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/2761/?">Fallout Wanderer's Edition</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/6938/?">RH Ironsights</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/3211/?">Mart's Mutant Mod</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/18506/?">Millenia's Combat Shotgun Replacer</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/944/?">ArchiveInvalidation Invalidator</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/15587/?">Millenia's 10mm Pistol Retextured</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/101/?">dDefiner's Enhanced Blood Textures</a></li>	
-				<li><a href="http://www.nexusmods.com/fallout3/mods/8340/?">Energy Visual Enhanced</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/788/?">No Auto Aim</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/18401/?">Millenia's Mauser C96 replacer</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/6264/?">Cold M4 Carbine</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/18791/?">Prone Mode</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/4968/?">Fallout Interoperability Program</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/3202/?">NPC Height randomizer</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/785/?">M1911</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/19864/?">Flora Overhaul</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/376/?">Killable Children</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/20004/?">Fallout Character Overhaul</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/18173/?">Blackened</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/1086/?">Games for Windows Live disabler</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/16875">The Imaginator</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/7865/?">Realistic Weapon Damage</a></li>
-				<li><a href="http://www.nexusmods.com/newvegas/mods/36901/?">Fallout Mod Manager</a></li>
-				<li><a href="http://forums.bethsoft.com/topic/1085562-wipzbeta-darnified-ui-f3/">DarNified UI</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/17965/?">A World of Pain</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/12056/?">NMC Texture Pack</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/8886/?">Fallout Stutter Remover</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/6510/?">Large Address Aware Enabler</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/18133/?">Weapon Retexture Project</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/17743/">Improved LOD Noise Texture</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/8576/?">Fallout 3 - Cut Content</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/20183/?">Enhanced Camera</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/20225/?">Helpless Falling</a></li>
-				<li><a href="http://forums.bethsoft.com/topic/1085562-wipzbeta-darnified-ui-f3/">DarNified UI FO3</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/15790/?">iHUD</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/15771/?">Unified HUD Project</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/15886/?">Adjustable HUD</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/17876/?">Dynavision - Dynamic Lens Effects</a></li>
-				<li><a href="http://www.nexusmods.com/fallout3/mods/15745/?">Cinematech - Film Grain</a></li>
-			</ul>
+				<div>
+					<ul id="modlist_grid_1" >
+						<li><a href="http://fose.silverlock.org/">Fallout 3 Script Extender</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/19122/?">Updated Unofficial Fallout 3 Patch</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/2761/?">Fallout Wanderer's Edition</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/6938/?">RH Ironsights</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/3211/?">Mart's Mutant Mod</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/18506/?">Millenia's Combat Shotgun Replacer</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/944/?">ArchiveInvalidation Invalidator</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/15587/?">Millenia's 10mm Pistol Retextured</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/101/?">dDefiner's Enhanced Blood Textures</a></li>	
+						<li><a href="http://www.nexusmods.com/fallout3/mods/8340/?">Energy Visual Enhanced</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/788/?">No Auto Aim</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/18401/?">Millenia's Mauser C96 replacer</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/6264/?">Cold M4 Carbine</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/18791/?">Prone Mode</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/4968/?">Fallout Interoperability Program</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/3202/?">NPC Height randomizer</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/785/?">M1911</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/19864/?">Flora Overhaul</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/376/?">Killable Children</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/20004/?">Fallout Character Overhaul</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/18173/?">Blackened</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/1086/?">Games for Windows Live disabler</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/16875">The Imaginator</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/7865/?">Realistic Weapon Damage</a></li>
+						<li><a href="http://www.nexusmods.com/newvegas/mods/36901/?">Fallout Mod Manager</a></li>
+						<li><a href="http://forums.bethsoft.com/topic/1085562-wipzbeta-darnified-ui-f3/">DarNified UI</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/17965/?">A World of Pain</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/12056/?">NMC Texture Pack</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/8886/?">Fallout Stutter Remover</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/6510/?">Large Address Aware Enabler</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/18133/?">Weapon Retexture Project</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/17743/">Improved LOD Noise Texture</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/8576/?">Fallout 3 - Cut Content</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/20183/?">Enhanced Camera</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/20225/?">Helpless Falling</a></li>
+						<li><a href="http://forums.bethsoft.com/topic/1085562-wipzbeta-darnified-ui-f3/">DarNified UI FO3</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/15790/?">iHUD</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/15771/?">Unified HUD Project</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/15886/?">Adjustable HUD</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/17876/?">Dynavision - Dynamic Lens Effects</a></li>
+						<li><a href="http://www.nexusmods.com/fallout3/mods/15745/?">Cinematech - Film Grain</a></li>
+					</ul>
+				</div>
 			<p id="total1"></p>
 		</div>
 		<div class="col-md-4">
@@ -198,7 +201,7 @@
 				<li><a href="http://www.nexusmods.com/skyrim/mods/774/?">Killable Children</a></li>
 			</ul>
 			<p id="total4"></p>
-			<h3>Recommended Mods:</h3>
+			<h3>Recommended Mods</h3>
 			<ul>
 				<li><a href="http://thenamelessmod.com/real/">The Nameless Mod for <b>Deus Ex</b></a></li>
 				<li><a href="http://nh2.wecreatestuff.com/">Nightmare House 2 for <b>Half-Life 2 Episode 2</b></a></li>
@@ -207,7 +210,7 @@
 				<li><a href="http://www.moddb.com/mods/afraid-of-monsters-dc">Afraid of Monsters Director's Cut for <b>Half-Life</b></a></li>
 			</ul>
 			<br />
-			<h3>Free Games:</h3>
+			<h3>Free Games</h3>
 			<ul>
 				<li><a href="http://store.steampowered.com/app/223710/">Cry of Fear</a></li>
 				<li><a href="https://www.duelofchampions.com/">Duel of Champions</a></li>
